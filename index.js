@@ -13,19 +13,19 @@ function executaPrograma() {
             resultado.classList.remove('desativado');
             resultado.classList.add('ativado');
             resultado.innerHTML = `IMC: ${calculoImc.toFixed(2)} <span>(Abaixo do peso)</span>`;
-        } else if (calculoImc >= 18.5 && calculoImc <= 24.9) {
+        } else if (calculoImc >= 18.5 && calculoImc <= 24.99) {
             resultado.classList.remove('desativado');
             resultado.classList.add('ativado');
             resultado.innerHTML = `IMC: ${calculoImc.toFixed(2)} <span>(Peso normal)</span>`;
-        } else if (calculoImc >= 25 && calculoImc <= 29.9) {
+        } else if (calculoImc >= 25 && calculoImc <= 29.99) {
             resultado.classList.remove('desativado');
             resultado.classList.add('ativado');
             resultado.innerHTML = `IMC: ${calculoImc.toFixed(2)} (Sobrepeso)`;
-        } else if (calculoImc >= 30 && calculoImc <= 34.9) {
+        } else if (calculoImc >= 30 && calculoImc <= 34.99) {
             resultado.classList.remove('desativado');
             resultado.classList.add('ativado');
             resultado.innerHTML = `IMC: ${calculoImc.toFixed(2)} (Obesidade grau 1)`;
-        } else if (calculoImc >= 35 && calculoImc <= 39.9) {
+        } else if (calculoImc >= 35 && calculoImc <= 39.99) {
             resultado.classList.remove('desativado');
             resultado.classList.add('ativado');
             resultado.innerHTML = `IMC: ${calculoImc.toFixed(2)} (Obesidade grau 2)`;
