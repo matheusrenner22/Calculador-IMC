@@ -5,16 +5,23 @@
     font-family: Roboto, sans-serif;
 }
 
-body {
-    background-color: rgb(0, 83, 83);
+html {
     height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: rgb(0, 83, 83);
 }
 
 .container {
     background: #fff;
     width: 400px;
     margin-inline: auto;
-    margin-top: 45px;
+    margin-top: 20px;
     border-radius: 10px;
     padding: 30px 15px;
 }
@@ -111,15 +118,14 @@ button:hover {
 }
 
 footer {
-    margin-top: 20px;
     background-color: #04AA6D;
-    padding: 20px 10px;
+    padding: 12px 10px;
     text-align: center;
     font-size: 17px;
-    margin-top: 100px;
+    margin-top: auto;
 }
 
-@media (max-width: 420px) {
+@media ((max-width: 420px) and (max-height: 920px)) {
     h2 {
         font-size: 18px;
     }
@@ -135,9 +141,5 @@ footer {
 
     .container {
         width: 300px;
-    }
-
-    footer {
-        margin-top: 100px;
     }
 }
